@@ -8,9 +8,8 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #fbfafa;
-  margin: 0px;
 }
-main {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,9 +17,12 @@ main {
 /* ----------
     header-part-style
     ------------- */
+.main-header {
+  padding: 0px 135px;
+}
 .header-part {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 30px;
 }
 nav ul {
@@ -38,7 +40,6 @@ nav li a {
   text-decoration: none;
   color: black;
 }
-
 /* -----------
     banner-part-style
     ------------- */
@@ -127,10 +128,16 @@ hr {
 }
 .see-more {
   text-align: right;
+  padding: 50px 265px 100px 0px;
+}
+.see-more a {
+  text-decoration: none;
+  color: #e44780;
 }
 /* -----------
   footer-part-style
 ------------- */
+
 .footer-details {
   color: #ffffff;
   background-color: #0a0826;
