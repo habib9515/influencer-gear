@@ -67,7 +67,6 @@ nav li a {
 .header-details {
   padding-bottom: 16px;
 }
-
 .link-button {
   text-decoration: none;
   background-image: linear-gradient(#e02c6d, #d65d89);
@@ -89,7 +88,7 @@ hr {
 /* -----------
     item-part-style
     ------------ */
-.collec-header {
+.header-color {
   text-align: center;
   font-weight: 600;
   color: #3a3a3a;
@@ -128,16 +127,31 @@ hr {
 }
 .see-more {
   text-align: right;
-  padding: 50px 265px 100px 0px;
+  padding: 50px 265px 50px 0px;
 }
 .see-more a {
   text-decoration: none;
   color: #e44780;
 }
+/* --------------
+  special-part-style
+  ------------- */
+.easy-life {
+  display: flex;
+  padding: 40px 165px 100px 165px;
+}
+.video-details {
+  padding-left: 50px;
+  text-align: justify;
+  padding-top: 60px;
+}
+.video-details a {
+  text-decoration: none;
+  color: #fbfafa;
+}
 /* -----------
   footer-part-style
 ------------- */
-
 .footer-details {
   color: #ffffff;
   background-color: #0a0826;
@@ -149,4 +163,75 @@ hr {
   font-size: 32px;
   text-decoration: none;
   color: #7b61ff;
+}
+/* media-queries-style */
+
+/* ----------
+  mobile-device
+  --------------- */
+@media only screen and (max-width: 688px) {
+  .main-header {
+    display: none;
+  }
+  .banner-part {
+    flex-direction: column;
+  }
+  .link-button {
+    padding: 10px 20px;
+  }
+  .half-width img {
+    padding-top: 40px;
+    width: 100%;
+  }
+  .logo {
+    display: none;
+  }
+  .items {
+    display: contents;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .easy-life {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 80%;
+  }
+  .footer-details {
+    margin-top: 50px;
+  }
+}
+/* ----------
+  tablet-device
+  --------------- */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+  }
+  .half-width {
+    width: 50%;
+    padding-left: 19%;
+  }
+  .half-width img {
+    width: 100%;
+    padding-top: 150px;
+  }
+  .logo {
+    padding-left: 40px;
+  }
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .easy-life {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 165px 100px 165px;
+  }
 }
