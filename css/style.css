@@ -7,7 +7,8 @@
     ---------------- */
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f6f1f1;
+  background-color: #fbfafa;
+  margin: 0px;
 }
 main {
   display: flex;
@@ -43,14 +44,36 @@ nav li a {
     ------------- */
 .banner-part {
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 .half-width {
   width: 50%;
-  padding-left: 5%;
+  padding-left: 10%;
 }
 .half-width img {
-  width: 50%;
+  width: 70%;
+  transition: transform 3s, width 1s;
+}
+.half-width img:hover {
+  transform: rotate(360deg);
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 52px;
+  color: #3a3a3a;
+  margin-bottom: 0px;
+}
+.header-details {
+  padding-bottom: 16px;
+}
+
+.link-button {
+  text-decoration: none;
+  background-image: linear-gradient(#e02c6d, #d65d89);
+  padding: 10px 40px;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 7px;
 }
 /* ----------
     logo-style
@@ -101,4 +124,22 @@ hr {
 }
 .fa-star.empty {
   color: #aeaeae;
+}
+.see-more {
+  text-align: right;
+}
+/* -----------
+  footer-part-style
+------------- */
+.footer-details {
+  color: #ffffff;
+  background-color: #0a0826;
+  text-align: center;
+  padding: 50px;
+}
+.social-icon .fab {
+  padding-right: 16px;
+  font-size: 32px;
+  text-decoration: none;
+  color: #7b61ff;
 }
